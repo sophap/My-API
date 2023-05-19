@@ -10,5 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_19_020825) do
+  create_table "volcanos", force: :cascade do |t|
+    t.integer "volcano_id"
+    t.string "volcano_name"
+    t.string "country"
+    t.string "region"
+    t.string "subregion"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "pei"
+    t.string "h_active"
+    t.string "vei_holoce"
+    t.string "hazard"
+    t.string "classification"
+    t.string "risk"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end

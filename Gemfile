@@ -5,6 +5,12 @@ ruby "3.1.3"
 
 gem "devise"
 
+gem "redis"
+
+gem "hiredis"
+
+gem "will_paginate"
+
 gem "csv"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
