@@ -241,10 +241,7 @@ DEPENDENCIES
   csv
   debug
   devise
-<<<<<<< HEAD
-=======
   hiredis
->>>>>>> praise
   importmap-rails
   jbuilder
   puma (~> 5.0)
