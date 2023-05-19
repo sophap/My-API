@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  volcano_id: 1
+  volcano_name: MyString
+  country: MyString
+  region: MyString
+  subregion: MyString
+  latitude: 1.5
+  longitude: 1.5
+  pei: MyString
+  h_active: MyString
+  vei_holoce: MyString
+  hazard: MyString
+  classification: MyString
+  risk: MyString
+
+two:
+  volcano_id: 1
+  volcano_name: MyString
+  country: MyString
+  region: MyString
+  subregion: MyString
+  latitude: 1.5
+  longitude: 1.5
+  pei: MyString
+  h_active: MyString
+  vei_holoce: MyString
+  hazard: MyString
+  classification: MyString
+  risk: MyString
