@@ -13,6 +13,10 @@ gem "will_paginate"
 
 gem "csv"
 
+gem 'omniauth-google-oauth2'
+
+gem "omniauth-rails_csrf_protection"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 
