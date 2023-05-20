@@ -13,6 +13,10 @@ gem "will_paginate"
 
 gem "csv"
 
+gem 'rspec-rails'
+
+gem 'rswag'
+
 gem 'omniauth-google-oauth2'
 
 gem "omniauth-rails_csrf_protection"

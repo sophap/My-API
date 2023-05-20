@@ -1,0 +1,69 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/volcanoes":
+    get:
+      summary: list volcanos
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create volcano
+      responses:
+        '200':
+          description: successful
+  "/api/v1/volcanoes/new":
+    get:
+      summary: new volcano
+      responses:
+        '200':
+          description: successful
+  "/api/v1/volcanoes/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit volcano
+      responses:
+        '200':
+          description: successful
+  "/api/v1/volcanoes/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show volcano
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update volcano
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update volcano
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete volcano
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: 127.0.0.1:3000/

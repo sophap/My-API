@@ -1,4 +1,5 @@
 class Api::V1::VolcanoesController < ApplicationController
+  before_action :authenticate_user, only: [:create, :show, :update, :destroy]
 
     def index
         # Use Redis to cache the results of the query for 5 minutes
