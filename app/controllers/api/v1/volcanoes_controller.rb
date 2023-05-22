@@ -2,6 +2,7 @@ class Api::V1::VolcanoesController < ApplicationController
   before_action :authenticate_user, only: [:create, :show, :update, :destroy]
 
     def index
+
         # Use Redis to cache the results of the query for 5 minutes
         @volcanoes = Rails.cache.fetch('volcanoes', expires_in: 5.seconds) do
           Volcano.paginate(page: params[:page], per_page: 20)
@@ -60,9 +61,5 @@ class Api::V1::VolcanoesController < ApplicationController
         unless current_user
           render json: { error: "You must be logged in to perform this action" }, status: 401
         end
-      end
-    
-      def current_user
-        @current_user ||= User.find(session[:user_id]) if session[:user_id]
       end
 end
