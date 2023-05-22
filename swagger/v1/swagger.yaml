@@ -6,18 +6,24 @@ info:
 paths:
   "/api/v1/volcanoes":
     get:
-      summary: list volcanos
+      summary: list volcanoes
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
     post:
-      summary: create volcano
+      summary: create a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
   "/api/v1/volcanoes/new":
     get:
       summary: new volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
@@ -30,7 +36,9 @@ paths:
       schema:
         type: string
     get:
-      summary: edit volcano
+      summary: edit a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
@@ -43,22 +51,30 @@ paths:
       schema:
         type: string
     get:
-      summary: show volcano
+      summary: show a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
     patch:
-      summary: update volcano
+      summary: update a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
     put:
-      summary: update volcano
+      summary: update a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
     delete:
-      summary: delete volcano
+      summary: delete a volcano
+      tags:
+      - Volcanoes
       responses:
         '200':
           description: successful
